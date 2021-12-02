@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+	background-color:  #dfe4e5 ;
+	font-family: 'Secular One',sans-serif ;
+}
+
+
+
+.navigation ul{
+	margin: 0; /*es la distancia del elemento señalado hacia los otros elementos */
+	padding: 10px; /*distancias entre el contenido de ese elemento y el borde su propio elemento */
+	text-align: center;
+	
+}
+
+.navigation li{
+	font-family: 'Secular One',sans-serif;
+	color:  #e30404 ;
+	font-weight: 100;
+	letter-spacing: 2px;
+	padding: 20px;
+	display: inline-block; /* los quiero en linea*/
+	text-decoration: none;  /* quitar decoracion*/
+	background: #dfe4e5 ;
+
+}
+
+
+.navigation li:hover{
+	color: red;
+	font-weight: 100;
+	letter-spacing: 2px;
+	padding: 20px;
+
+	
+	border-radius: 25px; /*para hacer el borde redondeado*/
+	display: inline-block; /* los quiero en linea*/
+	text-decoration: none;  /* quitar decoracion*/
+	background:  #bbbbbb ;
+
+}
+
+h1{
+	color:   #6c6c6c  ;
+	text-align: center;
+	font-family: 'Secular One',sans-serif ;
+	font-size: 38px;
+	line-height: 58px;
+	padding: 10px 10px;
+	margin:  10px 10px;
+}
+
+h2{
+	color: black;
+	font-size: 28px;
+	line-height: 48px;
+	padding: 10px 10px;
+	margin:  10px 10px;
+	text-align: center;
+	background-image: url("images/fondo.png");
+}
+
+.tabla-mundial{
+	text-align: center;
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+ 
+}
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+tr:hover{
+	background-color:  #4ba6f2 ;
+}
+
+.puesto{
+	color: grey;
+}
+.piloto:hover{
+	color: blue;
+
+}
+
+.dnf{
+	background-color: black;
+	color: white;
+}
+.num{
+	background-color: white;
+}
+.win{
+	background-color: gold;
+}
+.pla{
+	background-color: silver;
+}
+.bro{
+	background-color: 	#CD7F32 ;
+}
+
+.fotos{
+	overflow:hidden;
+    width:100%;
+}
+.fotos div{
+	 width:100%;
+    /* para evitar el margen superior de la primera fila */
+    margin-top:-10px;
+
+}
+
+.banner{
+	position: relative;
+}
+.texto-dentro{
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	font-family: 'Secular One',sans-serif;
+	color: white;
+	font-size: 28px;
+	line-height: 48px;
+}
+
+.banner img{
+	width: 100%;
+	
+
+}
+.fotos img {
+    width:303px;
+    height:303px;
+    float:left;
+    margin:10px 10px 0 0;
+}
+
+
+#banner{
+	background-image: url("https://cdn-1.motorsport.com/images/mgl/6b7xDWv0/s8/drivers-group-photo-with-the-2-1.jpg");
+	background-size: cover;
+	background-position:bottom center ;
+	height: 900px;
+	width: 100%;
+}
+
+.fotos-escuderias{
+	overflow:hidden;
+    width:100%;
+    height: 100%;
+}
+
+.puntos{
+	background-color: red;
+	color: black;
+	font-weight: bold;
+}
+
+.fotos-pilotos{
+	list-style: none;
+	display: inline-flex;
+}
+
+.fotos-pilotos li{
+	width: 48%;
+}
+
+.fotos-pilotos li figure{
+	padding: 5px;
+	position: relative;
+}
+.fotos-pilotos li figure:hover figcaption{
+	display: block;
+}
+
+.fotos-pilotos li figcaption{
+	display: none;
+	position: absolute;
+	top: 5px;
+	left:5px;
+	bottom: 5px;
+	right: 5px;
+	background: rgba(0, 0, 0, 1);
+	text-align: center;
+	padding: 15px;
+	font: 20px/30px  Secular One;
+	color: white;
+
+}
+
+.fotos-pilotos li figure img{
+	width: 100%;
+}
+
+.fotos-escuderias{
+	list-style: none;
+	display: inline-flex;
+}
+
+.fotos-escuderias li{
+	width: 48%;
+}
+
+.fotos-escuderias li figure{
+	padding: 0px;
+	position: relative;
+}
+.fotos-escuderias li figure:hover figcaption{
+	display: block;
+}
+
+.fotos-escuderias li figcaption{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom:0px;
+	right: 0px;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	padding: 15px;
+	font: 20px/30px  Secular One;
+	color: white;
+
+}
+
+.fotos-escuderias li figure img{
+	width: 100%;
+}
+
+.fotos-escuderias li figcaption a,.fotos-pilotos li figcaption a{
+
+	color:   yellowgreen;
+	text-decoration: none;
+	
+
+}
+
+.index li figcaption a{
+	color:   #e1e1e1;
+	text-decoration: none;
+}
+
+.index{
+	list-style: none;
+	display: inline-flex;
+}
+
+.index li{
+	width: 48%;
+}
+
+.index li figure{
+	padding: 0px;
+	position: relative;
+}
+.index li figure:hover figcaption{
+	display: block;
+}
+
+.index li figcaption{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	padding: 5px;
+	font: 20px/30px Secular One
+
+
+
+}
+
+.index li figure img{
+	width:550px;
+	height:380px;
+}
+
+/* Estilo footer*/
+
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../images/footer/background-footer.svg);
+    background-size: cover;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 0px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 0px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
